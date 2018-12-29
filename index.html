@@ -7,11 +7,29 @@
     background-color: #fee436;
    }
   </style>
-  <script></script>
  </head>
   <body>
       <a href="de/index.html">Deutsch</a>
       <a href="en/index.html">English</a>
       <a href="fr/index.html">Français</a>
+      
+    <script>
+      var lang = navigator.language || navigator.userLanguage;
+      if(['de','en','fr'].indexOf(lang)){
+        var start = Date.now();
+        var task;
+        window.onscroll=document.onclick=document.onmousemove=function(){start=Date.now();}
+        redirector=function(){
+            if(task) clearTimeout(task);
+            var delay = Date.now()-start;
+            if(delay>=7000){
+                document.location=lang+"/index.html";
+            } else {
+                task=setTimeout(redirector, 7000-delay);
+            }
+        }
+        task=setTimeout(redirector, 7000);    
+      }
+    </script>
   </body>
 </html>
