@@ -12,9 +12,21 @@
       <a href="de/index.html">Deutsch</a>
       <a href="en/index.html">English</a>
       <a href="fr/index.html">Français</a>
-      
     <script>
-      var lang = navigator.language || navigator.userLanguage;
+          var fontsize=1;
+          for(var i=1;(i<50) && document.body.scrollHeight==document.body.clientHeight
+           && document.body.scrollWidth==document.body.clientWidth;i++){
+            fontsize+=0.2;
+            var links = document.getElementsByTagName("a");
+            for(var j=0;j<links.length;j++){
+                if(links[j].href){
+                    links[j].style.fontSize = fontsize+"em";
+                    links[j].style.margin = fontsize*10+"px";
+                }
+            }  
+          }
+      
+      var lang = (navigator.language || navigator.userLanguage).substring(0,2);
       if(['de','en','fr'].indexOf(lang)){
         var start = Date.now();
         var task;
