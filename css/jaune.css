@@ -1,0 +1,18 @@
+   body {
+    background-color: #fee436;
+   }
+   .exp{
+      text-decoration: none;
+      color: rgb(126, 48, 31);
+      font-weight: 500 
+   }
+   .ext{
+      text-decoration: none;
+      color: rgb(31, 75, 126);
+      font-weight: 500 
+   }
+
+   a:visited {
+      text-decoration: none;
+      color:black;
+   }
