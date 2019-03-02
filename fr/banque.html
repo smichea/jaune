@@ -28,25 +28,84 @@
 
      <h1>II) Les actions en cours</h1>
      <h2>Contacter les banques</h2>
-     Si cela est possible il serait plus simple que les foncionalités décrites soient réalisées par
+     <p>Si cela est possible il serait plus simple que les foncionalités décrites soient réalisées par
      une banque existante. Il est donc de première importance de les contacter.<br/>
      <a href="https://mensuel.framapad.org/p/banquejaunelettreintroauxbanques">Le pad suivant est une proposition de texte</a> a envoyer aux banques<br/>
-     <a href="https://lite.framacalc.org/listebanquecontactees">Cette feuille</a> liste les échanges qui ont eu lieu avec les banques.<br/>
-
-
+     <a href="https://lite.framacalc.org/listebanquecontactees">Cette feuille</a> liste les échanges qui ont eu lieu avec les banques.
+     </p>
+     <p>Conclusions  :  Les banques utilisent toutes l'argent des dépots pour financer des prêts.
+     Le processus d'accord de prêt nécessite d'établir des accords de confidentialité.<br/>
+     Il y a 2 solutions pour que les processus de la banque restent transparents:
+     <ul>
+         <li>Soit la banque ne fait pas de prêt.</li>
+         <li>Soit les emprunteurs rendent publiques les informations nécéssaires à l'obtention de prêt.</li>
+     </ul>
+     Si la banque n'accorde pas de prêts cela signifie que les comptes ne peuvent être débiteurs et 
+     que la banque n'a pas de revenu liés à l'application d'intérêt. 
+     </p>
+     
      <h1>III) La réglementation bancaire</h1>
-     La réglementation bancaire française est <a href="https://www.tresor.economie.gouv.fr/Ressources/Reglementation-bancaire" class="ext">disponible en ligne</a>.
-     Elle repose sur les standards internationaux et sur la réglementation européenne.
+     <p>La réglementation bancaire française est <a href="https://www.tresor.economie.gouv.fr/Ressources/Reglementation-bancaire" class="ext">disponible en ligne</a>.
+     Elle repose sur les standards internationaux et sur la réglementation européenne.</p>
      <h2>Standards internationaux</h2>
-     La <a href="https://www.bis.org">Banque des règlements internationaux (BIS en anglais)</a>, banque centrale des banques centrales (de 28 pays) abrite
+     <p>La <a href="https://www.bis.org">Banque des règlements internationaux (BIS en anglais)</a>, banque centrale des banques centrales (de 28 pays) abrite
      un certain nombre de commités dont le comité de Bâle sur le controle bancaire.<br/>
      Ce commité a produit des accord Bâle I, Bale II et Bale III qui imposent un certain nombre de ratios sur la liquidité,
      les fonds propres, la solvabilité...<br/>
-     Pour une banque qui offre seulement la possibilité a ses utilisateur de recevoir et envoyer de l'argent (comme paypal par exemple)
-     l'impact de ses accords est limité.<br/>
+     Pour une banque qui offre seulement la possibilité à ses utilisateur de recevoir et envoyer de l'argent (comme paypal par exemple)
+     l'impact de ses accords est limité.</p>
      <h2>La réglementation européenne</h2>
 
-     <h1>IV) Lectures et visionnage</h1>
+     <h1>IV) Les coûts</h1>
+     <p>Pour fonctionner la banque à besoin
+         <ul>
+           <li>de faire connaitre ses services,</li>
+           <li>de se conformer à la législation (KYC, RGPD, etc),</li>
+           <li>d'assister les utilisateurs,</li>
+           <li>d'offrir un système informatique ergonomique et performant,</li>
+           <li>d'utiliser des systèmes tiers (DAB, carte de crédit, transferts,...)</li>
+         </ul>
+     </p>
+
+     <h1>V) Les comptes débiteurs</h1>
+     <p>
+         Si la banque ne fait pas de prêt elle ne peut donc autoriser les comptes débiteurs.
+        Il est néanmoins utile, dans certaines situations, de pouvoir obtenir une avance de fonds.<br/>
+        On peut imaginer un systeme de prets entre particuliers géré de maniere automatique par le systeme informatique.
+     </p>
+     <p>
+         Alice a souvent des fins de mois difficiles mais sa famille et ses amis (Bernard, Charlotte et Etienne) sont 
+         d'accord pour l'aider.<br/>
+         Bernard configure son compte pour que, si sa balance est superieure à 1000, alors il autorise 
+         implicitement un virement de 100 a Alice.<br/>
+         Charlotte indique que si sa balance est superieure a 300 alors elle autorise, sous reserve d'accord explicite,
+         un virement de 50 a Alice.<br/>
+         Etienne indique que si sa balance est superieure a 500 et si Alice ne lui doit rien, alors il autorise implicitement
+         un virement de 200 a Alice.<br/>
+         De son coté Alice indique qu'elle prefere emprunter, par ordre de priorité a Etienne, Bernard puis Charlotte.<br/>
+     </p>
+     <p> 
+         Au 28 Mars, Alice n'a plus que 50 sur son compte et se presente le réglement d'une facture de 280.
+         Etienne ayant une balance suffisante et Alice ne lui devant rien, 
+         un virement de 200 est fait automatiquement du compte d'Etienne vers celui d'Alice.
+         Charlotte ayant une balance suffisante, un message lui est envoyé pour lui demander si elle est d'accord
+         de transferer 30 a Alice (elle a 3h pour valider la transaction). Charlotte accepte.<br/>
+         Sans intervention de sa part, Alice a pu payer la facture de 280 alors qu'elle n'avait que 50 sur son compte.
+     </p>
+     <p>
+        Le 29 Mars, Alice souhaite payer par carte bancaire un achat de 110. 
+        Elle regarde son application bancaire et voit que son autorisation de découvert immédiat est
+         actuellement de 100 (Bernard ayant les fonds suffisants) et que sont autorisation de découvert conditionnelle
+         (c'est a dire soumise a validation manuelle) est de 120.<br/>
+         Le règlement par carte demandant une validation dans les 30 secondes, Alice contacte Charlotte et lui demande
+         si elle peut valider la transaction qu'elle va bientot recevoir mais qu'elle a besoin d'un transfert de 10 seuelement, Charlotte accepte.<br/>
+         Alice effectue le règlement par carte, Charotte recoit un message demandant le paiement de 50, elle modifie ce montant en indiquant 10 et valide<br/>
+         Bernard ayant une balance suffisante, un transfert immediat de 100 est fait a Alice.<br/>
+         Alice obtient donc les 110 necessaires a son achat et le paiement par carte est accepté.
+     </p>
+
+
+     <h1>VI) Lectures et visionnage</h1>
      <ul>
          <li>
             <a href="https://thinkerview.com/nef-banque-ethique-cooperative-financiere/">Interview thinkerview de Pierre-Emmanuel Valentin (juillet 2017) </a>
